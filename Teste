@@ -1,0 +1,22 @@
+
+package revisao_ed;
+
+
+public class Revisao_ed {
+
+  
+    public static void main(String[] args) throws Exception{
+        Vetor vetor = new Vetor(5);
+        
+        try{
+             vetor.adiciona("Elemento 1");
+             vetor.adiciona("Elemento 2");
+        }catch (Exception e) {
+             e.printStackTrace();
+        }
+        System.out.println(vetor.tamanho());
+        System.out.println(vetor.toString());
+        System.out.println(vetor.busca(1));
+    }
+    
+}
